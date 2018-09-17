@@ -1,3 +1,10 @@
+//Scala imports
+import scala.collection.mutable
+//Scalation imports
+import scalation.analytics.Regression
+import scalation.linalgebra. {MatrixD, VectorD, VectoD, Fac_Inv}
+import scalation.plot.{Plot,PlotM}
+
 object BankRegression extends App
 {
     // 35 data points:           Constant      x1          x2           x3
