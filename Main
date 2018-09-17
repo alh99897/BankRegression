@@ -62,9 +62,9 @@ for (i <- xrange.range){
 	WPI(i) = x(i,3)
 }
 
-new Plot (y, GDP)
-new Plot (y, interest)
-new Plot (y, WPI)
+new Plot (y, GDP, title="Money Printed vs. GDP")
+new Plot (y, interest, title="Money Printed vs. Interest")
+new Plot (y, WPI, title="Money Printed vs. WPI")
 
 val x2 = new  MatrixD ((35, 3),     1.0,    474131,	7.25,	 //      14.3,    //      1970
 				   1.0,    478918,	7.25,	  //     15.1,    //	1971
@@ -103,6 +103,8 @@ val x2 = new  MatrixD ((35, 3),     1.0,    474131,	7.25,	 //      14.3,    //  
 				   1.0,    2389660,	6)	   //    187.3)   //	2004
 
 
+new Plot (y, GDP, title="Money Printed vs. GDP")
+new Plot (y, interest, title="Money Printed vs. Interest")
 
 val rg2 = new Regression(x2, y)
 rg.train().eval()
