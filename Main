@@ -105,7 +105,7 @@ val x2 = new  MatrixD ((35, 3),     1.0,    474131,	7.25,	 //      14.3,    //  
 
 
 val rg2 = new Regression(x2, y)
-rg.train().eval()
+rg2.train().eval()
 println("b = " + rg2.coefficient)
 println("full mod fit = " + rg2.fitMap)
 
